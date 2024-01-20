@@ -14,7 +14,7 @@
         <item name="seekbarProgress">?attr/colorPrimary</item>
         <item name="seekbarSecondaryProgress">?attr/colorPrimaryVariant</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor">?attr/colorOnPrimary</item>
 
         <!-- Customize your theme here. -->
     </style>
