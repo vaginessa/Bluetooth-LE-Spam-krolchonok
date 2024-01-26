@@ -10,7 +10,7 @@
     <dimen name="seek_bar_thumb_size">20dp</dimen>
 
     <!-- CARDVIEW -->
-    <dimen name="cornerRadiusCardview">15dp</dimen>
+    <dimen name="cornerRadiusCardview">7dp</dimen>
 
     <!-- Headline -->
     <dimen name="textSizeHeadline">24dp</dimen>
