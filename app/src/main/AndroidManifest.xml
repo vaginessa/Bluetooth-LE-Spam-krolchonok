@@ -53,6 +53,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
+        android:debuggable="true"
         android:theme="@style/Theme.BluetoothLESpam.NoActionBar"
         tools:targetApi="31">
         <service android:foregroundServiceType="specialUse" android:name=".Services.AdvertisementForegroundService" />
