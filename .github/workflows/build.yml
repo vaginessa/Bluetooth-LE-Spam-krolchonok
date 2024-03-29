@@ -19,9 +19,8 @@ jobs:
       - name: Checkout keystore repo
         uses: actions/checkout@v2
         with:
-          repository: ${{ secrets.KEYSTORE_GIT_REPOSITORY }}
+          repository: krolchonok/android-key
           token: ${{ secrets.KEYSTORE_ACCESS_TOKEN }}
-          path: .
 
       - name: Run tests and build release artifacts
         run: |
