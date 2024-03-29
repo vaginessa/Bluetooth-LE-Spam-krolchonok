@@ -7,8 +7,9 @@ This project focuses on utilizing the built-in Bluetooth Low Energy (BLE) functi
 <h4><a href="https://discord.gg/x4e4Gma585">Join the Discord Server</a></h4>
 
 ## Requirements
-- Android 8.0 (API level 26) or later does not support IOS or PC
+- Android 8.0 (API level 26) or later
 > If you don't know your API level visit [SDK Platform release notes](https://developer.android.com/tools/releases/platforms). You also can view your Android version in the Info tab in settings.
+- (Does not support running on IOS or PC)
 
 ## Functionality
 ### Google Fast Pair (Android Devices)
@@ -30,8 +31,8 @@ This app can spoof various Apple devices via Bluetooth Low Energy, which can be 
 ### Apple Action Modals (Apple)
 By spoofing Bluetooth Low Energy advertisers, this app can prompt iOS devices to open unwanted modals and popups, imitating certain Apple-specific actions.
 
-### Apple iOS 17 Crash (Apple)
-With some modifications to the advertised BLE package, it is possible to trigger a reboot in various iOS 17 devices. This causes the targeted iPhone to temporarily freeze for a few minutes before automatically restarting.
+### Apple iOS 17 Crash (Apple) SEMI-PATCHED
+With some modifications to the advertised BLE package, it is possible to trigger a reboot in various iOS 17 devices. This causes the targeted iPhone to temporarily freeze for a few minutes before automatically restarting. (iOS Crash is considered half-fixed due to the release of iOS 17.2 , it may still work on some devices.).
 
 > **_NOTE:_** To achieve optimal results, it is recommended to set the advertising interval to a value between 20 and 100 milliseconds. Additionally, locking and unlocking the targeted iPhone can aid in the process.
 
