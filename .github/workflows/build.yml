@@ -15,22 +15,12 @@ jobs:
         run: chmod +x gradlew
       - name: Build with Gradle
         run: |
-          ./gradlew assemble --no-daemon
-          {
-            echo "version=v$(grep versionName app/build.gradle.kts | awk '{print $3}' | tr -d \")"
-            echo "commit=$(echo ${{ github.sha }} | cut -c-7)"
-          } >> "$GITHUB_ENV"
-          ls app/build/outputs/apk/*
-      - name: Upload APK
-        uses: actions/upload-artifact@v4
-        with:
-          name: Bluetooth-LE-Spam(${{ env.version }}@${{ env.commit }})
-          path: app/build/outputs/apk/**/app-*.apk
+          ./gradlew :app:packageReleaseUniversalApk 
       - name: Create Release
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: app/build/outputs/apk/release/app-release-unsigned.apk
+          file: ./app/build/outputs/apk_from_bundle/release/app-release-unsigned.apk
           tag: ${{ github.ref }}
           overwrite: true
           body: "Release"
